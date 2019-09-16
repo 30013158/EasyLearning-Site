@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: 'header'
+        'topimage'
+        'headingbar'
+        'nested'
+        'nested2'
+        'feedback'
+        'volunteer'
+        'footer';
+
+}
+
+#top {
+    color: white;
+
+}
+
+.item-1 {
+    background-color:black;
+
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    align-content: center;
+}
+
+.item-2 {
+    grid-area: topimage;
+    background-image: url("Images/AdultStudy.jpg");
+    height: 500px;
+    max-width:100%;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.navbar {
+    margin: auto;
+}
+
+.navbar a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: dodgerblue;
+}
+
+.item-3 {
+    grid-area: headingbar;
+    background-color: black;
+}
+
+.item-4 {
+
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-direction: row;
+
+    grid-area: nested;
+    /* grid-template-columns: repeat(3, auto) ; */
+    /* grid-gap: 10px; */
+    /* margin-top:10px;  */
+    /* margin-bottom: 10px;  */
+}
+
+.item-4>div {
+    width: 30%;
+    margin: 10px;
+    border-radius: 7px;
+    padding: 25px;
+    background-color: rgb(37, 107, 153);
+    color: white;
+}
+
+.item-5 {
+    grid-area: nested2;
+    background-image: url("Images/bulb.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.item-5>div {
+    color: white;
+    padding: 85px;
+}
+
+.item-6 {
+    grid-area: feedback;
+    background-color: #ABD9E3;
+    color: black;
+    padding: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+ .client{
+    
+    margin:5px;
+ }
+.content{
+    padding:15px;
+    text-align:center;
+}
+
+.item-7 {
+    font-size: 30px;
+    grid-area: volunteer;
+    background-color:steelblue;
+    color: white;
+     padding: 85px; 
+}
+
+.item-8 {
+    grid-area: footer;
+    text-align: center;
+}

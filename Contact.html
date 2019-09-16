@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EasyLearning</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+             background-image: url("Images/pencil.jpg"); 
+        background-attachment: fixed;
+    background-size: cover;}
+        .info {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            flex-direction: row;
+            flex-wrap: wrap;
+         }
+         .info>div{
+             padding: 5px;
+             border-radius:4px;
+             margin:10px;
+             background-color: rgba(100, 149, 224, 0.6);
+         }
+        input {
+            width: 500px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        
+
+        /* .contactform{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        } */
+
+        textarea {
+            height: 200px;
+            width: 500px;
+            border-radius: 4px;
+            padding: 10px;
+        }
+
+        input[type=submit] {
+            background-color: dodgerblue;
+            color: white;
+            cursor: pointer;
+
+        }
+        .img{
+            display:flex;
+            justify-content: center;
+             }
+             h4{color:blue;}
+             .item-8{background-color:black;
+             color: white;}
+             
+             .fa{
+    padding:20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin : 5px 2px;
+    border-radius: 50%;
+    color: dodgerblue;
+}
+    </style>
+</head>
+
+<body>
+    <div class="item-1">
+
+        <div class="title">
+            <h1 id="top">EasyLearning</h1>
+        </div>
+        <div class="navbar">
+            <a href="Home.html">Home</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="heading">
+        <h1 style="text-align: center; color:rgb(5, 50, 255);">Get in Touch <br>with Us</h1>
+        <br>
+      
+
+    </div>
+    <div class="info">
+        <div class="details" >
+            <h3>WE PROMISE YOU A GREAT EXPERIENCE WITH US<br> WHEN YOU JOIN OUR EASYLEARNING CENTER!</h3>
+            <br><br>
+            <h4>Contact information</h4><br>
+            Number 12 Ajit Road,Bathinda
+            <br>
+            Punjab, India<br><br>
+            easylearning@gmail.com
+            <br><br><br>
+            <h4>Opening hours</h4><br>
+            Mon-Thu : 6:00 - 9:00<br>
+            Fri: 8:00 - 9:30<br>
+            Sat-Sun: 11:00 - 6:00
+            <br>
+            <br>
+            <h4>Get our location from the map below</h4>
+        </div>
+        <div class="contactform">
+             <h3>   Enroll your child today or contact us to join as a volunteer</h3>
+            <form>
+                <fieldset>
+                    <label for="Name">Name*</label><br>
+                    <input type="text" name="Name" placeholder="Enter your name...">
+                    <br><br><br>
+                    <label for="email">Email*</label><br>
+                    <input type="email" name="mail" placeholder="Enter your email address ...">
+                    <br><br>
+                    <!-- <label for="purpose">Purpose*</label><br>
+                    <input type="radio" name=student>Student
+                    <input type="radio" name=volunteer>Volunteer
+                    <input type="radio" name=tutor>Tutor -->
+                    <label for="birthdate"> D/O/B</label><br>
+                    <input type="date" name="date">
+                    <br><br>
+                    <label for="msg">Message</label><br>
+                    <textarea name="message" placeholder="Enter your message/purpose here..."></textarea>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <br>
+    <div class="img">
+        <img src="Images/Location.PNG" alt="location of EasyLearning Center" style="border: 1px solid grey;">
+    </div>
+    <div>
+        
+    </div>
+    <div class="item-8">
+        <p style="font-size:25px;">Follow us on 
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+           <br> Copyright © EasyLearning 2019<br>
+            All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>
