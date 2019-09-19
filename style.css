@@ -113,13 +113,23 @@
     grid-area: feedback;
     background-color: #ABD9E3;
     color: black;
-    padding: 80px;
+    /* padding: 100px; */
     text-align: center;
     display: flex;
     flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content:center;
+}
+
+@media screen and (max-width:1000px) {
+    .item-6{
+        flex-wrap: wrap;
+ }
+ 
 }
  .client{
-    
+     /* width:300px;
+    height:auto; */
     margin:5px;
  }
 .content{
