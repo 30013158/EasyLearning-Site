@@ -113,7 +113,7 @@
     grid-area: feedback;
     background-color: #ABD9E3;
     color: black;
-    /* padding: 100px; */
+     padding: 80px; 
     text-align: center;
     display: flex;
     flex-direction: row;
